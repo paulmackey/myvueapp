@@ -1,22 +1,18 @@
 import Vue from 'vue'
-import App from './App.vue'
-
-/* import Post from '@/views/Post.vue'
 import VueRouter from 'vue-router'
+import App from './views/App.vue'
+
 Vue.use(VueRouter)
 
-const routes = [
-  { path: '/foo', component: Post }
-]
+// Vue.config.productionTip = false
 
 const router = new VueRouter({
-  routes
-  // mode: 'history', // will need htaccess for this to work
-  // base: process.env.NODE_ENV === 'development' ? '/' : '/toyota/',
+  mode: 'history', // enables accessing URL
+  routes: [
+    { path: '/foo', component: App }
+  ]
 })
-*/
-Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+  router
 }).$mount('#app')
