@@ -1,7 +1,7 @@
 <template>
     <div class="app">
        <SimpleSlider />
-       <h2>Recent Projects (component)</h2>
+       <Posts />
        <h2>Form (component)</h2>
        <h2>Recent Posts (component)</h2>
     </div>
@@ -9,10 +9,12 @@
 
 <script>
 import SimpleSlider from '../components/SimpleSlider'
+import Posts from '../components/Posts'
  export default {
   name: 'Home',
   components: {
-    SimpleSlider
+    SimpleSlider,
+    Posts
   },
  }
 </script>
