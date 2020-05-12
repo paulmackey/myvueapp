@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import App from './views/App.vue'
+import App from './views/App'
 
 Vue.use(VueRouter)
 
@@ -9,7 +9,7 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history', // enables accessing URL
   routes: [
-    { path: '/foo', component: App }
+    { path: '/', component: App }
   ]
 })
 
