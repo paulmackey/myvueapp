@@ -1,6 +1,6 @@
 <template>
 <div class="wrapper about">
-	<!-- <NavBar /> -->
+   <TopNav />
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -153,8 +153,12 @@
 </template>
 
 <script>
+ import TopNav from '../components/TopNav'
   export default {
-    name: 'About'
+				name: 'About',
+				components: {
+     TopNav
+    },
   }
 </script>
 

@@ -1,5 +1,6 @@
 <template>
 <div class="wrapper single">
+        <TopNav />
    <div class="container">
       <div class="row">
          <div class="col-sm-12">
@@ -22,8 +23,12 @@
 
 <script>
   import { butter } from '../buttercms'
+  import TopNav from '../components/TopNav'
   export default {
     name: 'Post',
+    components: {
+     TopNav
+    },
     data() {
       return {
         post: {}

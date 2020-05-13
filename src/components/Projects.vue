@@ -1,7 +1,8 @@
 <template>
-<div class="wrapper about_">
+<div class="wrapper about_" :class="page">
+   <TopNav />
    <section id="projects">
-      <div class="container">
+      <div class="container"> 
          <div class="row">
             <div class="col-sm-12">
                <h2 class="pull-left">Projects</h2>
@@ -20,7 +21,7 @@
                            <p class="card-text">{{projects.description}}</p>
                         </div>
                         <div class="card-footer text-right">
-                           visit
+                        <a target="_blank" :href="projects.url">Visit Site</a>
                         </div>
                      </div>
                   </div>
@@ -34,8 +35,13 @@
 
 <script>
  import data from '../projects.json'
+ import TopNav from '../components/TopNav'
  export default {
   name: 'Projects',
+  components: {
+    TopNav
+  },
+  props: ['page'], // must declare props this template accepts
     data() {
       return {
       projects: []

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './views/App'
+import Home from './components/Home'
 import Posts from './components/Posts'
 import Post from './components/Post'
 import Projects from './components/Projects'
@@ -13,7 +14,7 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history', // enables accessing URL
   routes: [
-    { path: '/', component: App,
+    { path: '/', component: Home,
     },
     {
       path: '/blog/',
@@ -39,5 +40,6 @@ const router = new VueRouter({
 })
 
 new Vue({
-  router
+  router,
+  render: h => h(App)
 }).$mount('#app')

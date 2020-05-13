@@ -1,27 +1,19 @@
 <template>
     <div class="app">
-       <SimpleSlider />
-       <Projects />
-       <ContactForm />
-        <Posts />
-       <Footer />
+      <Nav />
+     <router-view></router-view>
+      <Footer />
     </div>
 </template>
 
 <script>
-import SimpleSlider from '../components/SimpleSlider'
-import ContactForm from '../components/ContactForm'
-import Posts from '../components/Posts'
-import Projects from '../components/Projects'
-import Footer from '../components/Footer'
+ import Nav from '../components/Nav'
+ import Footer from '../components/Footer'
  export default {
-  name: 'Home',
+  name: 'App',
   components: {
-    SimpleSlider,
-    ContactForm,
-    Posts,
-    Projects,
-    Footer
+     Nav,
+     Footer
   },
  }
 </script>
@@ -30,7 +22,7 @@ import Footer from '../components/Footer'
 /** GENERAL **/
 body {
   font-size: 16px;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #f6f6f6;
     margin: 0;
   --blue: #1E88E5;
@@ -42,6 +34,9 @@ img {
 
 p {
   font-size: 16px;
+}
+.butter-float-right {
+  float: right;
 }
 
 h1, h2, h3, h4, h5 {
@@ -330,7 +325,7 @@ aside {
 }
 
 .wrapper {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 16px;
   margin-left: auto;
   /* margin-bottom: 40px; */
@@ -484,11 +479,6 @@ nav.top-nav #headerButtons {
 
 /* General sidebar styles */
 
-.bm-menu {
-  background: #334c6a;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-}
 
 /* Morph shape necessary with bubble or elastic */
 

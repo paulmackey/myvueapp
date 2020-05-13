@@ -6,24 +6,24 @@
             <nav class="top-nav">
                <ul id="headerButtons">
                   <li class="navButton">
-                     <NavLink exact activeclass="selected" to="/">
-                        <img src={homeIcon} />
-                     </NavLink>
+                    <router-link to="/">
+                        <img src='../assets/images/home.png' />
+                     </router-link>
                   </li>
                   <li class="navButton">
-                     <NavLink activeclass="selected" to="/about">
-                        <img src={aboutIcon} />
-                     </NavLink>
+                     <router-link to="/about">
+                         <img src='../assets/images/user.png' /> 
+                     </router-link>
                   </li>
                   <li class="navButton">
-                     <NavLink activeclass="selected" to="/projects">
-                        <img src={projects} />
-                     </NavLink>
+                      <router-link to="/projects">
+                       <img src='../assets/images/folder.png' />
+                     </router-link>
                   </li>
                   <li class="navButton">
-                     <NavLink activeclass="selected" to="/blog">
-                        <img src={blogIcon} />
-                     </NavLink>
+                     <router-link to="/blog">
+                        <img src='../assets/images/blog.png' />
+                     </router-link>
                   </li>
                </ul>
             </nav>

@@ -1,5 +1,6 @@
 <template>
-<div id="blog-home" class="wrapper">
+<div id="blog-home" class="wrapper" :class="page">
+      <TopNav />
    <section id="blog">
       <div class="container">
          <div class="row">
@@ -39,8 +40,13 @@
 <script>
   // import ButterCMS from 
   import { butter } from '../buttercms'
+  import TopNav from '../components/TopNav'
   export default {
     name: 'Post',
+    components: {
+     TopNav
+    },
+    props: ['page'], // must declare props this template accepts
     data() {
       return {
         page_title: 'Blog',
