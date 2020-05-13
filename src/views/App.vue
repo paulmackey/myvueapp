@@ -2,19 +2,26 @@
     <div class="app">
        <SimpleSlider />
        <Posts />
-       <h2>Form (component)</h2>
-       <h2>Recent Posts (component)</h2>
+       <ContactForm />
+       <Projects />
+       <Footer />
     </div>
 </template>
 
 <script>
 import SimpleSlider from '../components/SimpleSlider'
+import ContactForm from '../components/ContactForm'
 import Posts from '../components/Posts'
+import Projects from '../components/Projects'
+import Footer from '../components/Footer'
  export default {
   name: 'Home',
   components: {
     SimpleSlider,
-    Posts
+    ContactForm,
+    Posts,
+    Projects,
+    Footer
   },
  }
 </script>

@@ -1,35 +1,40 @@
 <template>
-  <div id="blog-home" class="section">
-    <div class="container">
-      <h1 class="is-size-1">{{ page_title }}</h1>
-      <hr>
-      <div class="columns is-multiline">
-        <!-- Create v-for and apply a key for Vue. Example is using a combination of the slug and index -->
-        <div class="column is-one-third" v-for="(post,index) in posts" :key="post.slug + '_' + index">
-          <router-link :to="'/blog/' + post.slug">
-            <div class="box">
-              <article class="media">
-                <div class="media-left">
-                  <figure class="image is-64x64">
-                    <!-- Bind results using a ':' -->
-                    <!-- Use a v-if/else if their is a featured_image -->
-                    <img v-if="post.featured_image" :src="post.featured_image" alt="">
-                    <img v-else src="http://via.placeholder.com/250x250" alt="">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <h2 class="title is-5">{{ post.title }}</h2>
-                    <p>{{ post.summary }}</p>
-                  </div>
-                </div>
-              </article>
+<div id="blog-home" class="wrapper">
+   <section id="blog">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <h2 class="pull-left">Recent Posts</h2>
+               <a class='pull-right view-all' href="/blog">View All</a>
             </div>
-          </router-link>
-        </div>
+            <!-- Create v-for and apply a key for Vue. Example is using a combination of the slug and index -->
+            <div class="col-sm-4" v-for="(post,index) in posts" :key="post.slug + '_' + index">
+               <router-link :to="'/blog/' + post.slug">
+                  <div class="mt-3 project-wrap">
+                     <div class="card shadow-lg">
+                        <div class='ribbon ribbon-top-right orange'>
+                           <span class='orange'>{category}</span>
+                        </div>
+                        <!-- Bind results using a ':' -->
+                        <!-- Use a v-if/else if their is a featured_image -->
+                        <img class="card-img-top" v-if="post.featured_image" :src="post.featured_image" alt="">
+                        <img  class="card-img-top" v-else src="http://via.placeholder.com/250x250" alt="">
+                        <div class="card-body">
+                           <h4 class="card-title is-5">{{ post.title }}</h4>
+                           <div class="author">By Paul Mackey on {post.published}</div>
+                           <p class="card-text">{{post.summary}}</p>
+                        </div>
+                        <div class="card-footer text-right">
+                          Footer button
+                        </div>
+                     </div>
+                  </div>
+               </router-link>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
+   </section>
+</div>
 </template>
 <script>
   // import ButterCMS from 

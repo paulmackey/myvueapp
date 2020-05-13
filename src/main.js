@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import App from './views/App'
 import Posts from './components/Posts'
 import Post from './components/Post'
+import Projects from './components/Projects'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const router = new VueRouter({
       path: '/blog/:slug',
       name: 'blog-post',
       component: Post
+    },
+    {
+      path: '/projects/',
+      name: 'Projects',
+      component: Projects
     }
   ]
 })
