@@ -1,9 +1,9 @@
 <template>
     <div class="app">
        <SimpleSlider />
-       <Posts />
-       <ContactForm />
        <Projects />
+       <ContactForm />
+        <Posts />
        <Footer />
     </div>
 </template>
@@ -311,7 +311,7 @@ aside {
 }
 
 .home #blog {
-  background: url('/images/blog-bg.jpg') no-repeat center fixed;
+  background: url('../assets/images/blog-bg.jpg') no-repeat center fixed;
   background-size: auto auto;
   background-size: cover;
   -webkit-background-size: cover;
@@ -420,10 +420,10 @@ header {
 }
 .top {
   background: var(--blue);
-  /* background: url('images/banner_bg.jpg'); */
+  background: url('../assets/images/banner_bg.jpg');
   box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.19);
   width: 100%;
-  z-index: 999;
+  z-index: 9899;
   font-size: 3em;
   position: fixed;
 }

@@ -9,7 +9,7 @@
                <a class='pull-right view-all ' href="/projects">View All</a>
             </div>
             <div class="col-sm-4">
-               <ScrollAnimation animateIn="fadeInLeft" isVisible={true}>
+               <div animateIn="fadeInLeft" isVisible={true}>
                   <div class="mt-3 project-wrap">
                      <div class="card shadow-lg">
                         <div class='ribbon ribbon-top-right orange'>
@@ -25,7 +25,7 @@
                         </div>
                      </div>
                   </div>
-               </ScrollAnimation>
+               </div>
             </div>
          </div>
       </div>

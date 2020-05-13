@@ -21,17 +21,17 @@
               </div>
 
               <p class="text-emoji">\ (•◡•) /</p>
-
+ 
              <router-link to="/about">
-                <img src={aboutIcon} /> About Me
+                <img src='../assets/images/user.png' /> About Me
             </router-link>
 
-             <router-link to="/about">
-                <img src={aboutIcon} /> About Me
+             <router-link to="/projects">
+                <img src='../assets/images/folder.png' /> Projects
             </router-link>
 
-             <router-link to="/about">
-                <img src={aboutIcon} /> About Me
+             <router-link to="/blog">
+                <img src='../assets/images/blog.png' /> Blog
             </router-link>
           </aside>
         </div>
