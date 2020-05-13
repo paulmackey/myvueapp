@@ -4,6 +4,7 @@ import App from './views/App'
 import Posts from './components/Posts'
 import Post from './components/Post'
 import Projects from './components/Projects'
+import About from './components/About'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const router = new VueRouter({
       path: '/projects/',
       name: 'Projects',
       component: Projects
+    },
+    {
+      path: '/about/',
+      name: 'About',
+      component: About
     }
   ]
 })

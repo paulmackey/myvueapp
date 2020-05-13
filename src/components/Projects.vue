@@ -7,17 +7,17 @@
                <h2 class="pull-left">Projects</h2>
                <a class='pull-right view-all ' href="/projects">View All</a>
             </div>
-            <div class="col-sm-4" v-for="items in data" :key="items.status">
+            <div class="col-sm-4" v-for="(projects,index) in projects" :key="projects.status + '_' + index">
                <div animateIn="fadeInLeft" isVisible={true}>
                   <div class="mt-3 project-wrap">
                      <div class="card shadow-lg">
                         <div class='ribbon ribbon-top-right orange'>
-                           <span class='orange'>{data.status}</span>
+                           <span class='orange'>{{projects.status}}</span>
                         </div>
-                        <img class="card-img-top py-5" src={data.thumbnail}>
+                        <img class="card-img-top py-5" :src="projects.thumbnail">
                         <div class="card-body">
-                           <h3 class="card-title">{data.title}</h3>
-                           <p class="card-text">{data.description}</p>
+                           <h3 class="card-title">{{projects.title}}</h3>
+                           <p class="card-text">{{projects.description}}</p>
                         </div>
                         <div class="card-footer text-right">
                            visit
@@ -38,18 +38,16 @@
   name: 'Projects',
     data() {
       return {
-            data: {
-      items: []
-            }
+      projects: []
       }
     },
     methods: {
-      getPost() {
-         data.forEach(element => this.data.items.push(element));
+      getProjects() {
+         data.forEach(element => this.projects.push(element));
       }
     },
     created() {
-      this.getPost()
+      this.getProjects()
     }
  }
 </script>
