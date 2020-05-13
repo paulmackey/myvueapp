@@ -1,6 +1,5 @@
 <template>
 <div class="wrapper about_">
- <TopNav />
    <section id="projects">
       <div class="container">
          <div class="row">
@@ -8,7 +7,7 @@
                <h2 class="pull-left">Projects</h2>
                <a class='pull-right view-all ' href="/projects">View All</a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4" v-for="items in data" :key="items.status">
                <div animateIn="fadeInLeft" isVisible={true}>
                   <div class="mt-3 project-wrap">
                      <div class="card shadow-lg">
@@ -34,12 +33,24 @@
 </template>
 
 <script>
- import TopNav from '../components/TopNav'
+ import data from '../projects.json'
  export default {
   name: 'Projects',
-  components: {
-    TopNav
-  }
+    data() {
+      return {
+            data: {
+      items: []
+            }
+      }
+    },
+    methods: {
+      getPost() {
+         data.forEach(element => this.data.items.push(element));
+      }
+    },
+    created() {
+      this.getPost()
+    }
  }
 </script>
 
