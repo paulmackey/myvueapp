@@ -21,7 +21,7 @@
                            <p class="card-text">{{projects.description}}</p>
                         </div>
                         <div class="card-footer text-right">
-                        <a target="_blank" :href="projects.url">Visit Site</a>
+                        <a class="btn btn-info" target="_blank" :href="projects.url">Visit Site</a>
                         </div>
                      </div>
                   </div>
@@ -49,9 +49,14 @@
     },
     methods: {
       getProjects() {
-         data
-         .filter((i, index) => (index < 3))
-         .forEach(element => this.projects.push(element))
+         if(this.page === 'home') { // if we're on the home page, return 3, else return all
+            data
+            .filter((i, index) => (index < 3))
+            .forEach(element => this.projects.push(element))
+         } else {
+            data
+            .forEach(element => this.projects.push(element))
+         }
       }
     },
     created() {

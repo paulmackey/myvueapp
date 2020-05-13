@@ -13,8 +13,8 @@
                   <div class="mt-3 project-wrap">
                      <div class="card shadow-lg">
                         <div class='ribbon ribbon-top-right orange'>
-                           <span class='orange' v-if="post.categories">
-                             <a v-for="category in post.categories" :key="category">{{category.name}}</a>
+                           <span class='orange'>
+                             <a v-for="(category,index) in post.categories" :key="index">{{category.name}}</a>
                              </span>
                         </div>
                         <!-- Bind results using a ':' -->
@@ -27,7 +27,7 @@
                            <p class="card-text">{{post.summary}}</p>
                         </div>
                         <div class="card-footer text-right">
-                          <router-link :to="'/blog/' + post.slug">View</router-link>
+                          <router-link class="btn btn-info" :to="'/blog/' + post.slug">View</router-link>
                         </div>
                      </div>
                   </div>
@@ -60,6 +60,7 @@
           page_size: 10
         }).then((res) => {
           console.log(res.data)
+          // TODO Something here with empty categories
           this.posts = res.data.data
         })
       }
