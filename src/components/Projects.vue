@@ -49,7 +49,9 @@
     },
     methods: {
       getProjects() {
-         data.forEach(element => this.projects.push(element));
+         data
+         .filter((i, index) => (index < 3))
+         .forEach(element => this.projects.push(element))
       }
     },
     created() {

@@ -1,9 +1,9 @@
 <template>
   <div>
-        <div class="hero-wrap">
+        <div class="hero-wrap slick-slide">
           <img class="hero" src="../assets/images/bg-2.jpg" />
 
-          <aside>
+          <aside class="">
               <h1 class="mt-3">Paul Mackey</h1>
               <p>Software Engineer</p>
               <p>DevÉire</p>

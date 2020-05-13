@@ -10,27 +10,27 @@
             </div>
             <!-- Create v-for and apply a key for Vue. Example is using a combination of the slug and index -->
             <div class="col-sm-4" v-for="(post,index) in posts" :key="post.slug + '_' + index">
-               <router-link :to="'/blog/' + post.slug">
                   <div class="mt-3 project-wrap">
                      <div class="card shadow-lg">
                         <div class='ribbon ribbon-top-right orange'>
-                           <span class='orange'>{category}</span>
+                           <span class='orange' v-if="post.categories">
+                             <a v-for="category in post.categories" :key="category">{{category.name}}</a>
+                             </span>
                         </div>
                         <!-- Bind results using a ':' -->
                         <!-- Use a v-if/else if their is a featured_image -->
                         <img class="card-img-top" v-if="post.featured_image" :src="post.featured_image" alt="">
                         <img  class="card-img-top" v-else src="http://via.placeholder.com/250x250" alt="">
                         <div class="card-body">
-                           <h4 class="card-title is-5">{{ post.title }}</h4>
-                           <div class="author">By Paul Mackey on {post.published}</div>
+                           <h4 class="card-title is-5"><router-link :to="'/blog/' + post.slug">{{ post.title }} </router-link></h4>
+                           <div class="author">By Paul Mackey on {{post.published}}</div>
                            <p class="card-text">{{post.summary}}</p>
                         </div>
                         <div class="card-footer text-right">
-                          Footer button
+                          <router-link :to="'/blog/' + post.slug">View</router-link>
                         </div>
                      </div>
                   </div>
-               </router-link>
             </div>
          </div>
       </div>
@@ -59,7 +59,7 @@
           page: 1,
           page_size: 10
         }).then((res) => {
-          // console.log(res.data)
+          console.log(res.data)
           this.posts = res.data.data
         })
       }

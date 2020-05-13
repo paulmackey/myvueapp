@@ -35,7 +35,7 @@
                <textarea class="form-control" name="message" required></textarea>
             </div>
             <div class="form-group">
-           Send
+           <input type="submit" value="send">
             </div>
          </form>
       </div>
