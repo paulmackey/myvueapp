@@ -23,6 +23,7 @@
 /** GENERAL **/
 body {
   font-size: 16px;
+  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   background: #f6f6f6;
     margin: 0;
@@ -253,7 +254,7 @@ pre {
   width: 100%;
   object-fit: cover;
   max-width: none;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 aside h1, aside h2, aside h3, aside p {
