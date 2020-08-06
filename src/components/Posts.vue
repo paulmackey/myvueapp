@@ -6,7 +6,7 @@
          <div class="row">
             <div class="col-sm-12">
                <h2 class="pull-left">Recent Posts</h2>
-               <a class='pull-right view-all' href="/blog">View All</a>
+               <router-link to="/blog" class='pull-right view-all'>View All</router-link>
             </div>
             <!-- Create v-for and apply a key for Vue. Example is using a combination of the slug and index -->
             <div class="col-sm-4" v-for="(post,index) in posts" :key="post.slug + '_' + index">

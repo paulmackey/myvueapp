@@ -6,7 +6,7 @@
          <div class="row">
             <div class="col-sm-12">
                <h2 class="pull-left">Projects</h2>
-               <a class='pull-right view-all ' href="/projects">View All</a>
+               <router-link to="/projects" class='pull-right view-all'>View All</router-link>
             </div>
             <div class="col-sm-4" v-for="(projects,index) in projects" :key="projects.status + '_' + index">
                <div animateIn="fadeInLeft" isVisible={true}>
