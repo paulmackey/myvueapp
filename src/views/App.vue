@@ -463,7 +463,7 @@ nav.top-nav #headerButtons {
 
 .bm-burger-bars {
   /* background: #373a47; */
-  background: #fff;
+  background: #fff!important;
 }
 
 /* Position and sizing of clickable cross button */
