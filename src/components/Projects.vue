@@ -21,7 +21,9 @@
                            <p class="card-text">{{projects.description}}</p>
                         </div>
                         <div class="card-footer text-right">
-                        <a class="btn btn-info" target="_blank" :href="projects.url">Visit Site</a>
+                        <a class="aws-btn aws-btn--primary aws-btn--visible" target="_blank" :href="projects.url">
+                           <span class="aws-btn__wrapper"><span class="aws-btn__content"><span>Visit Site <span class="underline"></span></span></span></span>
+                        </a>
                         </div>
                      </div>
                   </div>

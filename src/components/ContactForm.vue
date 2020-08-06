@@ -35,7 +35,7 @@
                <textarea class="form-control" name="message" required></textarea>
             </div>
             <div class="form-group">
-           <input class="btn btn-info" type="submit" value="Send">
+           <button class="aws-btn aws-btn--primary aws-btn--visible" role="button"><span class="aws-btn__wrapper"><span class="aws-btn__content"><span>Send</span></span></span></button>
             </div>
          </form>
       </div>

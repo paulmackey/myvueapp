@@ -27,7 +27,8 @@
                            <p class="card-text">{{post.summary}}</p>
                         </div>
                         <div class="card-footer text-right">
-                          <router-link class="btn btn-info" :to="'/blog/' + post.slug">View</router-link>
+                          <router-link class="aws-btn aws-btn--primary aws-btn--visible" :to="'/blog/' + post.slug">
+                          <span class="aws-btn__wrapper"><span class="aws-btn__content"><span>View <span class="underline"></span></span></span></span></router-link>
                         </div>
                      </div>
                   </div>

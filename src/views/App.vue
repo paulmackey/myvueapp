@@ -19,6 +19,7 @@
 </script>
 
 <style>
+@import '../assets/styles/buttons.css';
 /** GENERAL **/
 body {
   font-size: 16px;
