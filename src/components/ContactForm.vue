@@ -3,7 +3,7 @@
    <div class="row flex">
       <div class="col-sm-6">
          <h3 class="text-center">Get in touch</h3>
-         <h6 class="text-center my-4">Project suggestions, feedback or just to say hello..</h6>
+         <h6 class="text-center my-4">Project suggestions, feedback or just to say hello...</h6>
          <p class="text-center mailme">
             <a href="pmackey@deveire.com"><i class="fa fa-envelope text-dark"></i>pmackey@deveire.com</a>
          </p>
