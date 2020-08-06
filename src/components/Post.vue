@@ -1,16 +1,16 @@
 <template>
 <div class="wrapper single">
         <TopNav />
+    <div class="lead">
+      <img src="../assets/images/blog_lede.png">
+    </div>
    <div class="container">
-      <div class="row">
-         <div class="col-sm-12">
-            <h1 class="is-size-2">{{ post.data.title }}</h1>
-         </div>
-      </div>
       <div class="col-sm-12">
-         <div class="well mt-2">
+         <div class="well move-up boxshadow">
             <div class="card">
-               <div class="card-body">
+               <div class="card-body pt-5">
+                  <span class="category" v-for="(category,index) in post.data.categories" :key="index">{{category.name}}</span>
+                  <h1 class="is-size-2 mt-0">{{ post.data.title }}</h1>
                   <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
                   <div class="content" v-html="post.data.body"></div>
                </div>

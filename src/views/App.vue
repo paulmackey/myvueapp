@@ -21,6 +21,7 @@
 <style>
 @import '../assets/styles/buttons.css';
 /** GENERAL **/
+
 body {
   font-size: 16px;
   overflow-x: hidden;
@@ -28,6 +29,7 @@ body {
   background: #f6f6f6;
     margin: 0;
   --blue: #1E88E5;
+  --boxShadow: rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
 }
 img {
     max-width: 100%;
@@ -415,6 +417,27 @@ header {
 .home .top{
   display:none;
 }
+
+.lead img {
+    max-height: 440px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.move-up {
+  margin-top: -100px;
+}
+
+.category {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e08127;
+}
+.boxshadow {
+  box-shadow: var(--boxShadow);
+}
+
 .top {
   background: var(--blue);
   background: url('../assets/images/banner_bg.jpg');
