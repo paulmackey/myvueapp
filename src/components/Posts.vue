@@ -36,7 +36,7 @@
          </div>
       </div>
    </section>
-   <div class="container">
+   <div class="container buttercms-wrapper">
     <div class="row">
       <div clas="col-sm-12 text-right" style="margin-left: auto;">
         <small>Blog posts are powered by</small>
@@ -46,6 +46,15 @@
   </div>
 </div>
 </template>
+<style lang="less">
+.buttercms-wrapper {
+  display: block;
+ .home & {
+    display: none;
+    background: transparent;
+  }
+}
+</style>
 <script>
   // import ButterCMS from 
   import { butter } from '../buttercms'
