@@ -9,7 +9,7 @@
                <router-link to="/blog" class='pull-right view-all'>View All</router-link>
             </div>
             <!-- Create v-for and apply a key for Vue. Example is using a combination of the slug and index -->
-            <div class="col-sm-4" v-for="(post,index) in posts" :key="post.slug + '_' + index">
+            <div class="col-sm-6 col-md-4" v-for="(post,index) in posts" :key="post.slug + '_' + index">
                   <div class="mt-3 project-wrap">
                      <div class="card shadow-lg">
                         <div class='ribbon ribbon-top-right orange'>
@@ -36,6 +36,14 @@
          </div>
       </div>
    </section>
+   <div class="container">
+    <div class="row">
+      <div clas="col-sm-12 text-right" style="margin-left: auto;">
+        <small>Blog posts are powered by</small>
+        <a href="https://buttercms.com" target="_blank"><img class="butter-icon" src="../assets/images/butterCMSIcon.png"></a>
+      </div>
+    </div>
+  </div>
 </div>
 </template>
 <script>
