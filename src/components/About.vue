@@ -8,7 +8,7 @@
 			</div>
 			<div class="col-sm-12">
 				<div class="well mt-2">
-					<div class="card p-3">
+					<div class="card p-3 boxshadow">
 						<div class="mainDetails">
 							<div id="name" class="pull-left">
 								<h3 class="">Paul Mackey</h3>
