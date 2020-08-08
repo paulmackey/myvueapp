@@ -15,6 +15,7 @@
                 :key="index"
               >{{category.name}}</span>
               <h1 class="is-size-2 mt-0">{{ post.data.title }}</h1>
+              <strong class="author">By Paul Mackey on {{formatDate(post.data.published)}}</strong>
               <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
               <div class="content" v-html="post.data.body"></div>
             </div>
@@ -50,6 +51,9 @@ export default {
           console.log(res);
         });
     },
+    formatDate(date) {
+      return new Date(date).toDateString();
+    },
   },
   created() {
     this.getPost();
@@ -63,7 +67,7 @@ export default {
 }
 
 .single .card-body {
- text-align: left;
+  text-align: left;
 }
 
 pre {

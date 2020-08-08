@@ -29,7 +29,7 @@
                   <h4 class="card-title is-5">
                     <router-link :to="'/blog/' + post.slug">{{ post.title }}</router-link>
                   </h4>
-                  <div class="author">By Paul Mackey on {{post.published}}</div>
+                  <div class="author">By Paul Mackey on {{formatDate(post.published)}}</div>
                   <p class="card-text">{{post.summary}}</p>
                 </div>
                 <div class="card-footer text-right">
@@ -75,11 +75,10 @@
 }
 
 .butter-icon {
- width: 100%;
- max-width: 200px;
- height: auto;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
-
 </style>
 <script>
 // import ButterCMS from
@@ -109,6 +108,9 @@ export default {
           // TODO Something here with empty categories
           this.posts = res.data.data;
         });
+    },
+    formatDate(date) {
+      return new Date(date).toDateString();
     },
   },
   created() {
