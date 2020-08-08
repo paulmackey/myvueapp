@@ -6,7 +6,7 @@ import Posts from './components/Posts'
 import Post from './components/Post'
 import Projects from './components/Projects'
 import About from './components/About'
-
+import '@/assets/styles/All.less'
 Vue.use(VueRouter)
 
 // Vue.config.productionTip = false
@@ -14,7 +14,8 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history', // enables accessing URL
   routes: [
-    { path: '/', component: Home,
+    {
+      path: '/', component: Home,
     },
     {
       path: '/blog/',
