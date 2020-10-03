@@ -1,9 +1,27 @@
 [
 	{
+		"title": "The Ethel",
+		"description": "One of many AARP sites completed recently - design by AARP",
+		"url": "https://www.aarpethel.com/",
+		"thumbnail": "../images/aarp-the-ethel-logo.svg",
+		"status": "Complete",
+		"colour": "purple",
+		"gallery": []
+	},
+	{
 		"title": "ICT Skillnet",
 		"description": "Technology Ireland ICT Skillnet is a network of companies who collaborate to address skills needs within the technology sector.",
 		"url": "https://www.ictskillnet.ie",
 		"thumbnail": "../images/ict-skillnet-logo.jpg",
+		"status": "Complete",
+		"colour": "purple",
+		"gallery": []
+	},
+	{
+		"title": "Mid West Physiotherapy",
+		"description": "Mid West Physiotherapy is a private chartered physiotherapy practice located in Castletroy, Limerick.",
+		"url": "https://www.midwestphysio.ie",
+		"thumbnail": "../images/mid-west.gif",
 		"status": "Complete",
 		"colour": "purple",
 		"gallery": []
@@ -49,15 +67,6 @@
 		"description": "Restaurant & Hospitality Skillnet focuses on supporting those in employment within the Restaurant and Hospitality Industry.",
 		"url": "https://www.rhskillnet.ie/",
 		"thumbnail": "../images/rh-skillnet.png",
-		"status": "Complete",
-		"colour": "purple",
-		"gallery": []
-	},
-	{
-		"title": "Mid West Physiotherapy",
-		"description": "Mid West Physiotherapy is a private chartered physiotherapy practice located in Castletroy, Limerick.",
-		"url": "https://www.midwestphysio.ie",
-		"thumbnail": "../images/mid-west.gif",
 		"status": "Complete",
 		"colour": "purple",
 		"gallery": []
@@ -162,27 +171,9 @@
 		"gallery": []
 	},
 	{
-		"title": "Construction Workers Skills Register",
-		"description": "The Construction Worker Skills Register encourages engagement in training and skills development within the building sector.",
-		"url": "https://www.constructionworkerskillsregister.ie/",
-		"thumbnail": "../images/cwsr-logo.jpg",
-		"status": "Completed",
-		"colour": "purple",
-		"gallery": []
-	},
-	{
-		"title": "IPEYE2",
-		"description": "A cross-border exchange programme which gives new or aspiring entrepreneurs the chance to learn from experienced entrepreneurs running small businesses in other Participating Countries.",
-		"url": "http://www.ipeye2.eu/",
-		"thumbnail": "../images/ipeye2-logo.png",
-		"status": "Completed",
-		"colour": "purple",
-		"gallery": []
-	},
-	{
 		"title": "Loughmore Castleiney GAA",
 		"description": "Football / Hurling Club",
-		"url": "#",
+		"url": "https://gaa.loughmorecastleiney.com/",
 		"thumbnail": "../images/loughmore-logo.png",
 		"status": "Pending",
 		"colour": "orange",
