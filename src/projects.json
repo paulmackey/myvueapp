@@ -1,9 +1,9 @@
 [
 	{
-		"title": "The Ethel",
-		"description": "One of many AARP sites completed recently - design by AARP",
-		"url": "https://www.aarpethel.com/",
-		"thumbnail": "../images/aarp-the-ethel-logo.svg",
+		"title": "Toyota",
+		"description": "Apply for Finance form used across all toyota dealer sites",
+		"url": "https://www.toyota.ie/finance-insurance/apply-for-finance",
+		"thumbnail": "../images/logo-toyota.svg",
 		"status": "Complete",
 		"colour": "purple",
 		"gallery": []
