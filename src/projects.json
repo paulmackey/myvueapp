@@ -27,6 +27,15 @@
 		"gallery": []
 	},
 	{
+		"title": "Energy Communities Tipperary Cooperative",
+		"description": "A community led, home insulation upgrade and retrofitting organisation.",
+		"url": "https://energycommunitiestipp.ie",
+		"thumbnail": "../images/ectc.jpg",
+		"status": "Complete",
+		"colour": "purple",
+		"gallery": []
+	},
+	{
 		"title": "Mid West Physiotherapy",
 		"description": "Mid West Physiotherapy is a private chartered physiotherapy practice located in Castletroy, Limerick.",
 		"url": "https://www.midwestphysio.ie",
