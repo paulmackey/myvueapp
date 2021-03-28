@@ -8,7 +8,7 @@
         <h2>Software Engineer</h2>
         <h3>DevÉire</h3>
 
-        <div class="social-icons">
+        <!-- <div class="social-icons">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -16,11 +16,11 @@
           >
             <i class="fa fa-linkedin" />
           </a>
-        </div>
+        </div> -->
 
         <!-- <p class="text-emoji">\ (•◡•) /</p> -->
 
-        <router-link to="/about">
+        <!-- <router-link to="/about">
           <img src="../assets/images/user.png" /> About Me
         </router-link>
 
@@ -30,7 +30,7 @@
 
         <router-link to="/blog">
           <img src="../assets/images/blog.png" /> Blog
-        </router-link>
+        </router-link> -->
       </aside>
     </div>
   </div>
@@ -48,9 +48,11 @@ export default {
   width: 100%;
   object-fit: cover;
   max-width: none;
-  min-height: 500px;
+  min-height: 400px;
 }
-
+.hero-wrap {
+  position: relative;
+}
 aside h1,
 aside h2,
 aside h3,
@@ -66,10 +68,10 @@ aside h2 {
 
 aside {
   position: absolute;
-  top: 110px;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  width: 100%;
 }
 
 .slick-slide aside img {
@@ -96,10 +98,11 @@ aside {
 .social-icons {
   padding: 0.25rem 0;
   font-size: 3rem;
-      margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .social-icons a {
   padding: 0 0.625rem;
 }
+
 </style>

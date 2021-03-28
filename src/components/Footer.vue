@@ -4,7 +4,10 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-right">
-            <a target="_blank" href="https://www.linkedin.com/in/paul-mackey-25543098/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/paul-mackey-25543098/"
+            >
               <i class="fa fa-2x fa-linkedin"></i>
             </a>
           </div>
@@ -31,7 +34,7 @@ export default {
 
 footer {
   color: #fff;
-  background-color: rgb(51, 76, 106);
+  background-color: var(--primaryColour);
   height: 70px;
   position: absolute;
   bottom: -70px;

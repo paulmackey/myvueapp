@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row flex">
+    <div class="row flex contact-form">
       <div class="col-sm-6">
         <h2 class="text-center">Get in touch</h2>
         <h6 class="text-center my-4">Project suggestions, feedback or just to say hello...</h6>
@@ -69,17 +69,18 @@ export default {
 </script>
 
 <style lang="less">
-form {
-  padding: 30px;
+.contact-form {
+  padding: 60px 0px;
 }
 
 textarea {
   border-radius: 0 !important;
+  min-height: 130px;
 }
 
 input[type="text"],
 input[type="email"] {
-  height: 40px;
+  height: 50px;
   border-radius: 0;
 }
 

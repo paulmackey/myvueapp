@@ -14,7 +14,7 @@
             :key="projects.status + '_' + index"
           >
             <div animateIn="fadeInLeft" isVisible="{true}">
-              <div class="mt-3 project-wrap">
+              <div class="mt-4 project-wrap">
                 <div class="card shadow-lg">
                   <div class="ribbon ribbon-top-right orange">
                     <span class="orange">{{projects.status}}</span>

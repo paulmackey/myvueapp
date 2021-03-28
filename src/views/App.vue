@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <TopNav />
     <Nav />
     <router-view></router-view>
     <Footer />
@@ -7,6 +8,7 @@
 </template>
 
 <script>
+import TopNav from "../components/TopNav";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 export default {
@@ -14,6 +16,7 @@ export default {
   components: {
     Nav,
     Footer,
+    TopNav
   },
 };
 </script>

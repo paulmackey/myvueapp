@@ -7,22 +7,26 @@
             <ul id="headerButtons">
               <li class="navButton">
                 <router-link to="/">
-                  <img src="../assets/images/home.png" />
+                  <!-- <img src="../assets/images/home.png" /> -->
+                  Home
                 </router-link>
               </li>
               <li class="navButton">
                 <router-link to="/about">
-                  <img src="../assets/images/user.png" />
+                  <!-- <img src="../assets/images/user.png" /> -->
+                  About Me
                 </router-link>
               </li>
               <li class="navButton">
                 <router-link to="/projects">
-                  <img src="../assets/images/folder.png" />
+                  <!-- <img src="../assets/images/folder.png" /> -->
+                  Projects
                 </router-link>
               </li>
               <li class="navButton">
                 <router-link to="/blog">
-                  <img src="../assets/images/blog.png" />
+                  <!-- <img src="../assets/images/blog.png" /> -->
+                  Blog
                 </router-link>
               </li>
             </ul>
@@ -41,13 +45,17 @@ export default {
 
 <style lang="less">
 .top {
-  background: var(--blue);
+  background: var(--primaryColour);
   // background: url("../assets/images/banner_bg.jpg");
   box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.19);
   width: 100%;
   z-index: 9899;
   font-size: 3em;
   position: fixed;
+  top: 0;
+  height: var(--headerHeight);
+  display: flex;
+  align-items: center;
 }
 
 nav.top-nav li {
@@ -55,7 +63,7 @@ nav.top-nav li {
 }
 
 .selected {
-  background: var(--blue);
+  background: var(--primaryColour);
 }
 
 nav.top-nav li {

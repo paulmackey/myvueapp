@@ -4,10 +4,11 @@ body {
  background: #f6f6f6;
  margin: 0;
 
- --blue: #1e88e5;
  --orange: #e08127;
  --boxShadow: rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+ --primaryColour: #1f2833;
 
+ --headerHeight: 92px;
  --heading-1: 28px;
  --heading-2: 25px;
  --heading-3: 24px;
@@ -17,21 +18,35 @@ body {
 
  @media @mq-md {
   --heading-1: 54px;
-  --heading-2: 32px;
-  --heading-3: 28px;
-  --heading-4: 18px;
+  --heading-2: 40px;
+  --heading-3: 32px;
+  --heading-4: 24px;
   --heading-5: 16px;
   --heading-6: 16px;
  }
+
+ padding-top: var(--headerHeight);
+
+}
+
+.a {
+ width: 100%;
+ display: block;
+ height: 100px;
+ background: #282830;
+ position: fixed;
+ z-index: 2;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
  font-family: "Lato", sans-serif;
  margin-top: 15px;
+ font-weight: normal;
 }
 
 h1 {

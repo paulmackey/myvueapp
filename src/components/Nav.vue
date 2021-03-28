@@ -25,12 +25,12 @@ export default {
 /* Position and sizing of burger button */
 
 .bm-burger-button {
-  /* position: fixed; */
   position: fixed;
   width: 36px;
   height: 30px;
   left: 36px;
   top: 36px;
+  z-index: 9999;
 }
 
 /* Position and sizing of clickable cross button */
@@ -78,6 +78,39 @@ export default {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+#headerButtons a {
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: -5px;
+  border-bottom: 5px solid transparent;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 640px) {
+  #headerButtons {
+    display: block;
+  }
+
+  .bm-burger-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  #headerButtons {
+    display: none;
+  }
+
+  .bm-burger-button {
+    display: block;
+  }
+}
+
+#headerButtons a:hover {
+  border-bottom: 5px solid #fff;
 }
 
 .bm-item-list #headerButtons li:not(:first-child) {

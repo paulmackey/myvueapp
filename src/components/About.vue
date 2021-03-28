@@ -166,7 +166,7 @@ export default {
 <style scoped lang="less">
 .mainDetails {
   padding: 25px 35px;
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 2px solid var(--primaryColour);
 }
 
 #mainArea {
