@@ -1,5 +1,8 @@
 <template>
   <Slide :closeOnNavigation="true">
+    <router-link to="/">
+      <span>Home</span>
+    </router-link>
     <router-link to="/about">
       <span>About</span>
     </router-link>
