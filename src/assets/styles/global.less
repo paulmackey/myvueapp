@@ -25,32 +25,11 @@ p {
 }
 
 .bm-burger-bars {
- /* background: #373a47; */
  background: #fff !important;
-}
-
-.btn-info {
- background-color: #0889cb !important;
- border-color: #0889cb !important;
- padding: 8px 60px 8px 8px;
- position: relative;
-}
-
-.btn.btn-info span:after {
- content: "";
- height: 2px;
- display: inline-block;
- position: absolute;
- left: 0;
- width: 30px;
- top: 50%;
- background: #fff;
- transition: all;
 }
 
 .card-title {
  margin-top: 0px;
- font-weight: 700;
 }
 
 .card-body {
@@ -82,8 +61,7 @@ p {
 
 .category {
  text-transform: uppercase;
- font-weight: bold;
- color: #e08127;
+ color: var(--orange);
 }
 
 .view-all {
@@ -95,10 +73,8 @@ p {
  font-weight: 300;
  font-size: 16px;
  margin-left: auto;
- /* margin-bottom: 40px; */
  -webkit-transition: top 4s ease;
  transition: top 4s ease;
- /* padding: 0 100; */
  color: #000;
 }
 
@@ -154,6 +130,15 @@ p {
  margin-bottom: 100px;
 }
 
+
+.page-header {
+ padding-top: 150px;
+}
+
+.home .page-header {
+ padding-top: 0;
+}
+
 /** HEADER **/
 .home .top {
  display: none;
@@ -169,47 +154,13 @@ p {
 .project-wrap .card {
  min-height: 350px;
  background: #fff;
- /* padding: 15px; */
  box-shadow: 6px 7px 9px 0 rgba(0, 0, 0, 0.15) !important;
  border-top: 4px solid var(--blue);
 }
 
-/* ================ MEDIA QUERY - SIZE = 1024 ======================= */
-
-@media screen and (min-width: 1024px) and (max-width: 1024px) {}
-
-/* ================ MEDIA QUERY - MAX 980 ======================= */
-
-@media screen and (max-width: 980px) {}
-
-/* ================ MEDIA QUERY - MAX 800 ======================= */
-
-@media screen and (max-width: 800px) {}
-
-/* ================ MEDIA QUERY - MAX 768 ======================= */
-
-@media screen and (min-width: 768px) and (max-width: 800px) {}
-
-/* ================ MEDIA QUERY - MAX 640 ======================= */
-
-@media screen and (max-width: 640px) {}
-
-/* ================ MEDIA QUERY - MAX 600 ======================= */
-
-@media screen and (max-width: 600px) {}
-
 /* ================ MEDIA QUERY - MAX 480 ======================= */
-
 @media screen and (max-width: 480px) {
  h1 {
   font-size: 3rem;
  }
 }
-
-/* ================ MEDIA QUERY - MAX 360 ======================= */
-
-@media screen and (max-width: 360px) {}
-
-/* ================ MEDIA QUERY - MAX 320 ======================= */
-
-@media screen and (max-width: 320px) {}

@@ -4,7 +4,7 @@
     <section id="blog">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 page-header">
             <h2 class="pull-left">Recent Posts</h2>
             <router-link to="/blog" class="pull-right view-all">View All</router-link>
           </div>
@@ -34,11 +34,11 @@
                 </div>
                 <div class="card-footer text-right">
                   <router-link
-                    class="aws-btn aws-btn--primary aws-btn--visible"
+                    class="Button-primary"
                     :to="'/blog/' + post.slug"
                   >
-                    <span class="aws-btn__wrapper">
-                      <span class="aws-btn__content">
+                    <span class="">
+                      <span class="">
                         <span>
                           View
                           <span class="underline"></span>

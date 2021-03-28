@@ -4,7 +4,7 @@
     <section id="projects">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 page-header">
             <h2 class="pull-left">Projects</h2>
             <router-link to="/projects" class="pull-right view-all">View All</router-link>
           </div>
@@ -26,15 +26,14 @@
                   </div>
                   <div class="card-footer text-right">
                     <a
-                      class="aws-btn aws-btn--primary aws-btn--visible"
+                      class="Button-primary"
                       target="_blank"
                       :href="projects.url"
                     >
-                      <span class="aws-btn__wrapper">
-                        <span class="aws-btn__content">
+                      <span class="">
+                        <span class="">
                           <span>
                             Visit Site
-                            <span class="underline"></span>
                           </span>
                         </span>
                       </span>

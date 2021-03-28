@@ -5,9 +5,8 @@
 
       <aside class>
         <h1 class="mt-3">Paul Mackey</h1>
-        <p>Software Engineer</p>
-        <p>DevÉire</p>
-        <p class></p>
+        <h2>Software Engineer</h2>
+        <h3>DevÉire</h3>
 
         <div class="social-icons">
           <a
@@ -19,7 +18,7 @@
           </a>
         </div>
 
-        <p class="text-emoji">\ (•◡•) /</p>
+        <!-- <p class="text-emoji">\ (•◡•) /</p> -->
 
         <router-link to="/about">
           <img src="../assets/images/user.png" /> About Me
@@ -59,6 +58,12 @@ aside p {
   color: #fff;
 }
 
+aside h1,
+aside h2 {
+  margin: 2rem 0;
+  font-weight: normal;
+}
+
 aside {
   position: absolute;
   top: 110px;
@@ -91,6 +96,7 @@ aside {
 .social-icons {
   padding: 0.25rem 0;
   font-size: 3rem;
+      margin-bottom: 2rem;
 }
 
 .social-icons a {

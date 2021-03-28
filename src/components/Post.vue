@@ -15,7 +15,7 @@
                 :key="index"
               >{{category.name}}</span>
               <h1 class="is-size-2 mt-0">{{ post.data.title }}</h1>
-              <strong class="author">By Paul Mackey on {{formatDate(post.data.published)}}</strong>
+              <p class="author">By Paul Mackey on {{formatDate(post.data.published)}}</p>
               <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
               <div class="content" v-html="post.data.body"></div>
             </div>

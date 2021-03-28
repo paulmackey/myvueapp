@@ -42,7 +42,7 @@ export default {
 <style lang="less">
 .top {
   background: var(--blue);
-  background: url("../assets/images/banner_bg.jpg");
+  // background: url("../assets/images/banner_bg.jpg");
   box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.19);
   width: 100%;
   z-index: 9899;

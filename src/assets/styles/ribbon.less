@@ -16,15 +16,6 @@
   border: 5px solid #bd610b !important;
  }
 
- &.purple::before,
- &.purple::after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  display: block;
-  border: 5px solid purple !important;
- }
-
  span {
   position: absolute;
   display: block;
@@ -39,12 +30,8 @@
   text-align: center;
  }
 
- span.purple {
-  background-color: #aa3191;
- }
-
  span.orange {
-  background-color: #e08127;
+  background-color: var(--orange);
  }
 }
 
@@ -74,6 +61,7 @@
  position: relative;
  padding: 10em 10%;
  background: #fff;
+ z-index: 1;
  text-align: center;
 }
 

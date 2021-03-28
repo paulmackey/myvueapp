@@ -3,8 +3,8 @@
     <TopNav />
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">
-          <h1>About me</h1>
+        <div class="col-sm-12 page-header">
+          <h2>About me</h2>
         </div>
         <div class="col-sm-12">
           <div class="well mt-2">

@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="container">
     <div class="row flex">
       <div class="col-sm-6">
-        <h3 class="text-center">Get in touch</h3>
+        <h2 class="text-center">Get in touch</h2>
         <h6 class="text-center my-4">Project suggestions, feedback or just to say hello...</h6>
         <p class="text-center mailme">
           <a href="pmackey@deveire.com">
@@ -48,9 +48,9 @@
             <textarea class="form-control" name="message" required></textarea>
           </div>
           <div class="form-group">
-            <button class="aws-btn aws-btn--primary aws-btn--visible" role="button">
-              <span class="aws-btn__wrapper">
-                <span class="aws-btn__content">
+            <button class="Button-primary" role="button">
+              <span class="">
+                <span class="">
                   <span>Send</span>
                 </span>
               </span>
