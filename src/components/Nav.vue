@@ -25,7 +25,7 @@ export default {
 /* Position and sizing of burger button */
 
 .bm-burger-button {
-  position: fixed;
+  position: fixed!important;
   width: 36px;
   height: 30px;
   left: 36px;
