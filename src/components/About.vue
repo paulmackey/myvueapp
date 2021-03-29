@@ -115,7 +115,7 @@
                           <li>A strong sense of initiative, self-motivated & work well under pressure</li>
                           <li>Ability to explain technical issues clearly to non-technical colleagues</li>
                           <li>Flexible and adaptable in my approach to work, enjoying new challenges</li>
-                          <li>Hands on experience in the WordPress API, PHP, JavaScript, jQuery, MySql</li>
+                          <li>Hands on experience in PHP, JavaScript, jQuery, MySql</li>
                         </ul>
                       </div>
                     </div>
