@@ -25,18 +25,19 @@
                     <p class="card-text">{{projects.description}}</p>
                   </div>
                   <div class="card-footer text-right">
-                    <a
+                  <!-- Internal Post -->
+                  <router-link v-if="projects.internalLink" 
                       class="Button-primary"
-                      target="_blank"
+                      :to="projects.url">
+                      Read More
+                  </router-link>
+
+                    <!-- External Site -->
+                    <a v-else
+                      class="Button-primary"
                       :href="projects.url"
-                    >
-                      <span class="">
-                        <span class="">
-                          <span>
-                            Visit Site
-                          </span>
-                        </span>
-                      </span>
+                      target="_blank"
+                      >Visit Site
                     </a>
                   </div>
                 </div>
@@ -81,6 +82,7 @@ export default {
   mounted() {
     window.scrollTo(0, 0);
   }
+
 };
 </script>
 

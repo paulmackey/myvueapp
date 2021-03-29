@@ -56,15 +56,7 @@
                   <router-link
                     class="Button-primary"
                     :to="'/blog/' + post.slug"
-                  >
-                    <span class="">
-                      <span class="">
-                        <span>
-                          View
-                          <span class="underline"></span>
-                        </span>
-                      </span>
-                    </span>
+                  >Read More
                   </router-link>
                 </div>
               </div>

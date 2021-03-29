@@ -28,7 +28,7 @@ export default {
 /* Position and sizing of burger button */
 
 .bm-burger-button {
-  position: fixed!important;
+  position: fixed !important;
   width: 36px;
   height: 30px;
   left: 36px;
@@ -112,7 +112,8 @@ export default {
   }
 }
 
-#headerButtons a:hover {
+#headerButtons a:hover,
+#headerButtons a.router-link-exact-active {
   border-bottom: 5px solid #fff;
 }
 
