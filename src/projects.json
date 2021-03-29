@@ -157,7 +157,7 @@
 		"description": "Interior Design Specialists",
 		"url": "https://www.switchingrooms.ie",
 		"thumbnail": "../images/complete-interiors.jpg",
-		"status": "Pending",
+		"status": "Complete",
 		"colour": "orange",
 		"gallery": []
 	},
@@ -166,7 +166,7 @@
 		"description": "Ireland's most exciting veterinary conference",
 		"url": "https://www.vetcon.ie/",
 		"thumbnail": "../images/vetcon-logo.png",
-		"status": "Completed",
+		"status": "Complete",
 		"colour": "purple",
 		"gallery": []
 	},
@@ -175,7 +175,7 @@
 		"description": "Casseo is a leading Project Management Company for Business Change and IT Initiatives",
 		"url": "https://www.casseo.com/",
 		"thumbnail": "../images/casseo-logo.jpg",
-		"status": "Completed",
+		"status": "Complete",
 		"colour": "purple",
 		"gallery": []
 	},
@@ -184,7 +184,7 @@
 		"description": "ERS is a niche provider of Program/Project Management; Business Analysis & Full IT Stack contract & permanent recruitment services",
 		"url": "http://www.ersrecruitment.com/",
 		"thumbnail": "../images/ers-recruitment-logo.jpg",
-		"status": "Completed",
+		"status": "Complete",
 		"colour": "purple",
 		"gallery": []
 	},
@@ -193,7 +193,7 @@
 		"description": "Football / Hurling Club",
 		"url": "https://gaa.loughmorecastleiney.com/",
 		"thumbnail": "../images/loughmore-logo.png",
-		"status": "Pending",
+		"status": "Complete",
 		"colour": "orange",
 		"gallery": []
 	}

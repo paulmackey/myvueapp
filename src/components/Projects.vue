@@ -16,8 +16,8 @@
             <div animateIn="fadeInLeft" isVisible="{true}">
               <div class="mt-4 project-wrap">
                 <div class="card shadow-lg">
-                  <div class="ribbon ribbon-top-right orange">
-                    <span class="orange">{{projects.status}}</span>
+                  <div class="ribbon ribbon-top-right" v-bind:class="[ projects.status == 'Complete' ? 'green' : 'orange' ]">
+                    <span v-bind:class="[ projects.status == 'Complete' ? 'green' : 'orange' ]">{{projects.status}}</span>
                   </div>
                   <img class="card-img-top py-5" :src="projects.thumbnail" />
                   <div class="card-body">
@@ -78,6 +78,9 @@ export default {
   created() {
     this.getProjects();
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  }
 };
 </script>
 

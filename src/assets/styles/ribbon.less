@@ -16,6 +16,15 @@
   border: 5px solid #bd610b !important;
  }
 
+ &.green::before,
+ &.green::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 5px solid #00913b !important;
+ }
+
  span {
   position: absolute;
   display: block;
@@ -32,6 +41,10 @@
 
  span.orange {
   background-color: var(--orange);
+ }
+
+ span.green {
+  background-color: var(--green);
  }
 }
 

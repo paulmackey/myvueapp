@@ -58,6 +58,9 @@ export default {
   created() {
     this.getPost();
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  }
 };
 </script>
 

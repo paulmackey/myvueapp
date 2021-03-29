@@ -20,6 +20,9 @@ export default {
     Posts,
     Projects,
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  }
 };
 </script>
 
