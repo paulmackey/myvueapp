@@ -3,7 +3,9 @@
     <div class="row flex contact-form">
       <div class="col-sm-6">
         <h2 class="text-center">Get in touch</h2>
-        <h6 class="text-center my-4">Project suggestions, feedback or just to say hello...</h6>
+        <h6 class="text-center my-4">
+          Project suggestions, feedback or just to say hello...
+        </h6>
         <p class="text-center mailme">
           <a href="pmackey@deveire.com">
             <i class="fa fa-envelope text-dark"></i>pmackey@deveire.com
@@ -21,12 +23,12 @@
       </div>
       <div class="col-sm-6">
         <form
-          action="/page/success"
           class="form-horizontal"
           name="contact"
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          @submit.prevent="handleSubmit"
         >
           <input type="hidden" name="form-name" value="contact" />
           <p class="hidden" hidden>
@@ -37,15 +39,15 @@
           </p>
           <div class="form-group">
             <label>Your Name</label>
-            <input class="form-control" type="text" name="name" required />
+            <input class="form-control" type="text" name="name" required @input="ev => form.name = ev.target.value"/>
           </div>
           <div class="form-group">
             <label>Your Email</label>
-            <input class="form-control" type="email" name="email" required />
+            <input class="form-control" type="email" name="email" required @input="ev => form.email = ev.target.value"/>
           </div>
           <div class="form-group">
             <label>Message</label>
-            <textarea class="form-control" name="message" required></textarea>
+            <textarea class="form-control" name="message" required @input="ev => form.message = ev.target.value"></textarea>
           </div>
           <div class="form-group">
             <button class="Button-primary" role="button">
@@ -63,8 +65,47 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "ContactForm",
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
+    },
+    handleSubmit() {
+      const axiosConfig = {
+        header: { "Content-Type": "application/x-www-form-urlencoded" },
+      };
+      axios
+        .post(
+          "/",
+          this.encode({
+            "form-name": "contact",
+            ...this.form,
+          }),
+          axiosConfig
+        )
+        .then(() => {
+          this.$router.push("thanks");
+        })
+        .catch(() => {
+          this.$router.push("404");
+        });
+    },
+  },
 };
 </script>
 

@@ -6,6 +6,10 @@ import Posts from './components/Posts'
 import Post from './components/Post'
 import Projects from './components/Projects'
 import About from './components/About'
+import PageNotFound from './components/PageNotFound'
+import SubmissionSuccess from './components/SubmissionSuccess'
+import SubmissionFail from './components/SubmissionFail'
+
 import '@/assets/styles/All.less'
 Vue.use(VueRouter)
 
@@ -36,6 +40,20 @@ const router = new VueRouter({
       path: '/about/',
       name: 'About',
       component: About
+    },
+    {
+      path: '/thanks',
+      name: 'success',
+      component: SubmissionSuccess
+    },
+    {
+      path: '/404',
+      name: 'fail',
+      component: SubmissionFail
+    },
+    {
+      path: "*",
+      component: PageNotFound
     }
   ]
 })
