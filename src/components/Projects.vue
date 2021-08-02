@@ -9,7 +9,7 @@
             <router-link to="/projects" class="pull-right view-all">View All</router-link>
           </div>
           <div
-            class="col-sm-4"
+            class="col-sm-6 col-md-4"
             v-for="(projects,index) in projects"
             :key="projects.status + '_' + index"
           >

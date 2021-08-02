@@ -2,12 +2,12 @@
   <div class="container">
     <div class="row flex contact-form">
       <div class="col-sm-6">
-        <h2 class="text-center">Get in touch</h2>
+        <h2 class="text-center text-uppercase">Get in touch</h2>
         <h6 class="text-center my-4">
           Project suggestions, feedback or just to say hello...
         </h6>
         <p class="text-center mailme">
-          <a href="pmackey@deveire.com">
+          <a href="mailto:pmackey@deveire.com">
             <i class="fa fa-envelope text-dark"></i>pmackey@deveire.com
           </a>
         </p>
